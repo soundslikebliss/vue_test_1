@@ -1,0 +1,83 @@
+body {
+}
+
+/*Typography*/
+p, h1, h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+h1 {
+    font-size: 26px;
+}
+h2 {
+    font-size: 22px;
+}
+
+
+.wrapper {
+    background-color: #eee;
+    width: 100%;
+    margin-top: 8em;
+    text-align: center;
+}
+
+/*Navigation elements, links. Table layout for easy vertical alignment*/
+table {
+    width: 100%;
+}
+td {
+    vertical-align: middle;
+    text-align: center;
+    padding: 1em 0;
+}
+
+a {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+    padding: .5em;
+}
+
+/*hover effects*/
+.hvr-shutter-in-horizontal:before {
+        background-color: #eee;
+}
+
+/*Ma face*/
+.face {
+    background-image: url('me1.jpg');
+    margin: 0 auto;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.im_a_lawyer {
+    padding: 1em;
+}
+
+.send_me_mail {
+    margin-top:3em;
+    text-align: center;
+}
+
+.pages-content {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1em;
+    text-align: left;
+}
+.page-button {
+    margin-top: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+    .home-wrapper {
+        margin-top: 0;
+    }
+    td {
+        display: block;
+        width: 100%;
+    }
+}
