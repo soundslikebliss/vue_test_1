@@ -6,7 +6,19 @@ var Home = Vue.extend({
 var Work = Vue.extend({
     template:
             '<div class="pages-content">' +
-                '<p>Cat ipsum dolor sit amet, meowing non stop for food, scratch the furniture. Chase the pig around the house purr while eating, for kitty power! always hungry for meow all night having their mate disturbing sleeping humans scamper use lap as chair. Cat slap dog in face sleep in the bathroom sink, kitty loves pigs. Chew foot. Sleep on dog bed, force dog to sleep on floor. Hack up furballs chase imaginary bugs destroy couch as revenge thinking longingly about tuna brine, but groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! or playing with balls of wool rub face on owner. Stare at ceiling asdflkjaertvlkjasntvkjn (sits on keyboard) and hide at bottom of staircase to trip human yet massacre a bird in the living room and then look like the cutest and most innocent animal on the planet. Attack dog, run away and pretend to be victim throwup on your pillow step on your keyboard while youre gaming and then turn in a circle . Sweet beast destroy couch, and leave hair everywhere, yet lie on your belly and purr when you are asleep, but sleep on keyboard, or dream about hunting birds chew on cable. </p>' +
+                '<h2>Jive Software (6/15 - 7/16)</h2>' +
+                '<br />' +
+                '<p>Contributed to jivesoftware.com -> a heavily cusomized WP site using custom post types, custom fields, and more!</p>' +
+                '<br />' +
+                '<br />' +
+                '<h2>Empirical UX (2/15 - 6/15)</h2>' +
+                '<br />' +
+                '<p>Built UI components and interactions using AngularJS for data-intensive apps used by Intel and Jaguar. Used services and dependency injection to share data models.</p>' +
+                '<br />' +
+                '<br />' +
+                '<h2>WebLively (8/14 - 2/15)</h2>' +
+                '<br />' +
+                '<p>Responsible for converting key areas of the application to responsive layouts. Designed and implemented modernizing style updates with input from stakeholders. Worked with lead dev on UX strategy.</p>' +
                 '<a v-link="{ path: \'/\' }" class="hvr-shutter-in-horizontal page-button">Home</a>' +
              '</div>'
 })
@@ -14,7 +26,9 @@ var Work = Vue.extend({
 var Skills = Vue.extend({
     template:
             '<div class="pages-content">' +
-                '<p>Cat ipsum dolor sit amet, meowing non stop for food, scratch the furniture. Chase the pig around the house purr while eating, for kitty power! always hungry for meow all night having their mate disturbing sleeping humans scamper use lap as chair. Cat slap dog in face sleep in the bathroom sink, kitty loves pigs. Chew foot. Sleep on dog bed, force dog to sleep on floor. Hack up furballs chase imaginary bugs destroy couch as revenge thinking longingly about tuna brine, but groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! or playing with balls of wool rub face on owner. Stare at ceiling asdflkjaertvlkjasntvkjn (sits on keyboard) and hide at bottom of staircase to trip human yet massacre a bird in the living room and then look like the cutest and most innocent animal on the planet. Attack dog, run away and pretend to be victim throwup on your pillow step on your keyboard while youre gaming and then turn in a circle . Sweet beast destroy couch, and leave hair everywhere, yet lie on your belly and purr when you are asleep, but sleep on keyboard, or dream about hunting birds chew on cable. </p>' +
+                '<h2>Oh it\'s\ a long list... but some of the most pertinant things that I have a solid understanding of:</h2>' +
+                '<br />' +
+                '<ul><li>Wordpress (and custom fields, types)</li><li>PHP, OOP PHP</li><li>JS, AJAX</li> <li>AngularJS, VueJS</li><li>Sass</li><li>Grunt</li></ul>' +
                 '<a v-link="{ path: \'/\' }" class="hvr-shutter-in-horizontal page-button">Home</a>' +
              '</div>'
 })
@@ -22,9 +36,22 @@ var Skills = Vue.extend({
 var Projects = Vue.extend({
     template:
             '<div class="pages-content">' +
-                '<p>Cat ipsum dolor sit amet, meowing non stop for food, scratch the furniture. Chase the pig around the house purr while eating, for kitty power! always hungry for meow all night having their mate disturbing sleeping humans scamper use lap as chair. Cat slap dog in face sleep in the bathroom sink, kitty loves pigs. Chew foot. Sleep on dog bed, force dog to sleep on floor. Hack up furballs chase imaginary bugs destroy couch as revenge thinking longingly about tuna brine, but groom yourself 4 hours - checked, have your beauty sleep 18 hours - checked, be fabulous for the rest of the day - checked! or playing with balls of wool rub face on owner. Stare at ceiling asdflkjaertvlkjasntvkjn (sits on keyboard) and hide at bottom of staircase to trip human yet massacre a bird in the living room and then look like the cutest and most innocent animal on the planet. Attack dog, run away and pretend to be victim throwup on your pillow step on your keyboard while youre gaming and then turn in a circle . Sweet beast destroy couch, and leave hair everywhere, yet lie on your belly and purr when you are asleep, but sleep on keyboard, or dream about hunting birds chew on cable. </p>' +
+                '<h2>Angular</h2>' +
+                '<hr>' +
+                '<a href="" class="project-link">Comic Shopper</a>' +
+                '<h2 class="pad-top">general Front-End</h2>' +
+                '<hr>' +
+                '<a href="" class="project-link">Sans</a>' +
+                '<br />' +
+                '<a href="" class="project-link">Cinnamon</a>' +
+                '<h2 class="pad-top">Ruby/Rails</h2>' +
+                '<hr>' +
+                '<a href="" class="project-link">Board</a>' +
+                '<br />' +
+                '<a href="" class="project-link">Travel Photos</a>' +
+                '<br />' +
                 '<a v-link="{ path: \'/\' }" class="hvr-shutter-in-horizontal page-button">Home</a>' +
-             '</div>'
+            '</div>'
 })
 
 
