@@ -4,6 +4,7 @@ body {
 /*Typography*/
 p, h1, h2 {
     font-family: 'Roboto Condensed', sans-serif;
+    line-height: normal;
 }
 h1 {
     font-size: 26px;

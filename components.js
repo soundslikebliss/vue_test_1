@@ -1,32 +1,6 @@
 // Components
 var Home = Vue.extend({
-    template:
-            '<table>' +
-                '<tr>' +
-                    '<td>' +
-                        '<a v-link="{ path: \'/\' }" class="hvr-shutter-in-horizontal">Here</a>' +
-                    '</td>' +
-                    '<td>' +
-                        '<a v-link="{ path: \'/work\' }" class="hvr-shutter-in-horizontal">Workin\'\ It</a>' +
-                    '</td>' +
-                    '<td>' +
-                        '<div class="face">' +
-                        '</div>' +
-                    '</td>' +
-                    '<td>' +
-                        '<a v-link="{ path: \'/skills\' }" class="hvr-shutter-in-horizontal">Skills</a>' +
-                    '</td>' +
-                    '<td>' +
-                        '<a v-link="{ path: \'/projects\' }" class="hvr-shutter-in-horizontal">Projects</a>' +
-                    '</td>' +
-                '</tr>' +
-            '</table>' +
-
-            '<div class="im_a_lawyer">' +
-                '<h1>David Adams,</h1>' +
-                '<br />' +
-                '<h2>Developer</h2>' +
-            '</div>'
+    template: '#home-content'
 })
 
 var Work = Vue.extend({
