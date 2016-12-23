@@ -1,6 +1,7 @@
 // Components
 var About = Vue.extend({
     template: '<div class="pages-content">' +
+                    '<br />' +
                     '<h2>My Deal</h2>' +
                     '<hr>' +
                     '<br />' +
@@ -23,6 +24,12 @@ var Home = Vue.extend({
 var Work = Vue.extend({
     template:
             '<div class="pages-content">' +
+                '<br />' +
+                '<h2>Wieden and Kennedy</h2>' +
+                '<br />' +
+                '<p>Contributed heavily to multiple applications and sites. Developed architecture and utility within codebases that used frameworks such as Angular2 with Typescript and BackboneJS. Used Javascript and complex CSS styling to deliver user experiences that represented the capabilities of one of the top ad agencies in the country.</p>' +
+                '<br />' +
+                '<br />' +
                 '<h2>Jive Software</h2>' +
                 '<br />' +
                 '<p>Worked on jivesoftware.com and other Jive properties while consistently incorporating new ideas via the Marketing department. Coded in heavily customized Wordpress builds that utilized custom post types, child themes, custom fields (ACF). Wrote PHP loops, functions, ternary expressions and conditional statements in creating templates from scratch, feeding data and generating logic. Wrote Javascript functions and data storage objects to facilitate translation of Marketo form fields to various foreign languages depending on visitor\'\s geographic location.</p>' +
@@ -53,36 +60,40 @@ var Work = Vue.extend({
 var Skills = Vue.extend({
     template:
             '<div class="pages-content">' +
+                '<br />' +
                 '<h2>Oh it\'s\ a long list... but some of the most pertinent things that I have a solid understanding of:</h2>' +
                 '<br />' +
-                '<ul><li>JS, JQuery, AJAX</li> <li>AngularJS, VueJS, currently learning ReactJS</li><li>HTML, CSS, Sass</li><li>Grunt</li><li>Wordpress (and custom fields, types, themes)</li><li>PHP, OOP PHP</li><li>UX Wireframing in Balsamiq and Gliffy</li></ul>' +
+                '<ul><li>JS, JQuery, AJAX</li> <li>AngularJS, VueJS,  React</li><li>HTML, CSS, Sass</li><li>Grunt, Gulp</li><li>Wordpress (and custom fields, types, themes)</li><li>PHP, OOP PHP, Ruby, Rails, SQL</li><li>UX Wireframing in Balsamiq and Gliffy, Photoshop</li></ul>' +
                 '<a v-link="{ path: \'/\' }" class="hvr-shutter-in-horizontal page-button">Home</a>' +
              '</div>'
 })
 
-var Projects = Vue.extend({
+var Samples = Vue.extend({
     template:
             '<div class="pages-content">' +
-                '<h2>AngularJS</h2>' +
-                '<h3>(single-page application, drag and drop functionality, custom directives (components))</h3>' +
-                '<hr>' +
-                '<a href="http://comics.pizzapartypdx.com/" class="project-link" target="_blank">Comic Shopper</a>' +
-                '<h2 class="pad-top">AJAX, OOP</h2>' +
-                '<h3>(external API consumption using AJAX, OOP with PHP)</h3>' +
-                '<hr>' +
-                '<a href="http://yoda.pizzapartypdx.com/" class="project-link" target="_blank">English to Yoda Translator</a>' +
-                '<h2 class="pad-top">General Front-End.</h2>' +
-                '<h3>(scroll-to behavior, animations, modals, image carousel, responsiveness)</h3>' +
-                '<hr>' +
-                '<a href="http://sanssouci.pizzapartypdx.com/" class="project-link" target="_blank">Sans</a>' +
                 '<br />' +
-                '<a href="http://cinnamon.pizzapartypdx.com/" class="project-link" target="_blank">Cinnamon</a>' +
-                '<h2 class="pad-top">Back-End</h2>' +
-                '<h3>(Ruby/Rails, persistent data storage (SQL), user authentication)</h3>' +
+                '<h3>Delta Airlines / Seattle Seahawks</h3>' +
                 '<hr>' +
-                '<a href="http://bloggyb.herokuapp.com/posts" class="project-link" target="_blank">Board</a>' +
                 '<br />' +
-                '<a href="http://ancient-sea-6769.herokuapp.com/" class="project-link" target="_blank">Travel Photos</a>' +
+                '<a href="https://www.12status.com/" target="_blank">Delta 12Status</a>' +
+                '<br />' +
+                '<br />' +
+                '<br />' +
+                '<br />' +
+                '<h3>Powerade</h3>' +
+                '<hr>' +
+                '<br />' +
+                '<a href="http://www.us.powerade.com/" target="_blank">Power Through</a>' +
+                '<br />' +
+                '<br />' +
+                '<br />' +
+                '<br />' +
+                '<h3>KFC</h3>' +
+                '<hr>' +
+                '<br />' +
+                '<a href="https://www.nashvillehotrecord.com/" target="_blank">Nashville Hot</a>' +
+                '<br />' +
+                '<br />' +
                 '<br />' +
                 '<a v-link="{ path: \'/\' }" class="hvr-shutter-in-horizontal page-button">Home</a>' +
             '</div>'
@@ -109,8 +120,8 @@ router.map({
     '/skills': {
         component: Skills
     },
-    '/projects': {
-        component: Projects
+    '/samples': {
+        component: Samples
     }
 })
 
