@@ -53,15 +53,15 @@
         <template id="about">
             <div class="pages-content">
                 <br />
-                <h2>My Deal</h2>
+                <h2>{{heading}}</h2>
                 <hr>
                 <br />
-                <p>I'm David Adams and I'm a Front-End Web Developer.</p>
+                <p>{{statement_one}}</p>
                 <br />
-                <p>I have experience building engaging, responsive interfaces on the web using a whole slew of web technologies. I strive to create simple, clean, and accessible solutions for end users.</p>
+                <p>{{statement_two}}</p>
                 <br />
                 <br />
-                <p>Thanks for coming by!</p>
+                <p>{{statement_three}}</p>
                 <a v-link="{ path: '/' }" class="hvr-shutter-in-horizontal page-button">Home</a>
             </div>
         </template>
@@ -70,34 +70,34 @@
         <template id="work">
             <div class="pages-content">
                 <br />
-                <h2>Wieden and Kennedy</h2>
+                <h2>{{one.place}}</h2>
                 <br />
-                <p>Contributed heavily to multiple applications and sites. Developed architecture and utility within codebases that used frameworks such as Angular2 with Typescript and BackboneJS. Used Javascript and complex CSS styling to deliver user experiences that represented the capabilities of one of the top ad agencies in the country.</p>
-                <br />
-                <br />
-                <h2>Jive Software</h2>
-                <br />
-                <p>Worked on jivesoftware.com and other Jive properties while consistently incorporating new ideas via the Marketing department. Coded in heavily customized Wordpress builds that utilized custom post types, child themes, custom fields (ACF). Wrote PHP loops, functions, ternary expressions and conditional statements in creating templates from scratch, feeding data and generating logic. Wrote Javascript functions and data storage objects to facilitate translation of Marketo form fields to various foreign languages depending on visitor\\s geographic location.</p>
+                <p>{{one.duties}}</p>
                 <br />
                 <br />
-                <h2>Empirical UX</h2>
+                <h2>{{two.place}}</h2>
                 <br />
-                <p>Built UI components and interactions using AngularJS for data-intensive apps used by Intel and Jaguar. Used services and dependency injection to share data models. Migrated several areas of code from jQuery to Angular. Made calls to Intel back-end codebase using http service. Used existing Angular directives to loop through data to build out UI. Created custom directives that corresponded to specific areas of the application and its respective data.</p>
-                <br />
-                <br />
-                <h2>WebLively</h2>
-                <br />
-                <p>Responsible for converting landing pages to responsive, mobile-friendly designs. Used Bootstrap grid and custom media queries. Coded in Less and compiled to CSS. Designed and implemented modernizing style updates with input from stakeholders. Worked in CodeIgniter codebase writing both PHP and JS. Acted with CEO to construct overall UX strategy.</p>
+                <p>{{two.duties}}</p>
                 <br />
                 <br />
-                <h2>Unigo Group</h2>
+                <h2>{{three.place}}</h2>
                 <br />
-                <p>Co-created and maintained ​corporate blog​ following brand guidelines using Foundation 5 and Wordpress. Used Sass to add features and modify styling in Unigo.com code-base. Designed email template mock-ups in collaboration with marketing department. Gained further exposure to .Net, Visual Studio, version control, agile development, and task management tools (Jira, etc.). </p>
+                <p>{{three.duties}}</p>
                 <br />
                 <br />
-                <h2>Switchboard</h2>
+                <h2>{{four.place}}</h2>
                 <br />
-                <p>Helped to create internal metrics dashboard using front-end MVC framework with dynamic data populated through RESTful API calls. ​ Constructed Rails application to serve FAQs to users, incorporating a CMS-style interface for non-technical admins.​ Utilized Javascript to create scrolling and show/hide functionality. ​ Pushed other new site features such as ​Javascript tool-tips, site-wide alerts, ​contextual pop-ups and email preview functionality to code-base.</p>
+                <p>{{four.duties}}</p>
+                <br />
+                <br />
+                <h2>{{five.place}}</h2>
+                <br />
+                <p>{{five.duties}} </p>
+                <br />
+                <br />
+                <h2>{{six.place}}</h2>
+                <br />
+                <p>{{six.duties}}</p>
                 <a v-link="{ path: '/' }" class="hvr-shutter-in-horizontal page-button">Home</a>
             </div>
         </template>
@@ -150,7 +150,7 @@
             <p>Send me mail: russianid1@gmail.com</p>
             <br />
             <br />
-            <p class="vue-blurb">This is a single page site using VueJS and VueJS router.<br />Check out the <a href="https://github.com/soundslikebliss/vue_test_1" target="_blank">code</p>
+            <p class="vue-blurb">This is a single page site using Vue and Vue router.<br />Check out the <a href="https://github.com/soundslikebliss/vue_test_1" target="_blank">code</p>
         </div>
 
 
