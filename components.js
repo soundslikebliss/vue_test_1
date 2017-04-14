@@ -8,7 +8,7 @@ var About = Vue.extend({
     data: function() {
         return {
             heading : "My Deal",
-            statement_one : "I'm David Adams and I'm a Front-End Web Developer.",
+            statement_one : "I'm David Adams and I'm a Web Developer.",
             statement_two : "I have experience building engaging, responsive interfaces on the web using a whole slew of web technologies. I strive to create simple, clean, and accessible solutions for end users.",
             statement_three : "Thanks for coming by!"
         };

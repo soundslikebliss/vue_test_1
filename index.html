@@ -22,31 +22,27 @@
 
         <!-- home page view -->
         <template id="home-content">
-            <table>
-                <tr>
-                    <td>
-                        <a v-link="{ path: '/about' }" class="hvr-shutter-in-horizontal">About</a>
-                    </td>
-                    <td>
-                        <a v-link="{ path: '/work' }" class="hvr-shutter-in-horizontal">Workin' it</a>
-                    </td>
-                    <td align="center">
-                        <div class="face">
-                        </div>
-                    </td>
-                    <td>
-                        <a v-link="{ path: '/skills' }" class="hvr-shutter-in-horizontal">Skills</a>
-                    </td>
-                    <td>
-                        <a v-link="{ path: '/samples' }" class="hvr-shutter-in-horizontal">Samples</a>
-                    </td>
-                </tr>
-            </table>
-            <div class="im-a-lawyer">
+            <div class="banner"></div>
+            <ul id="home-nav">
+                <li>
+                    <a v-link="{ path: '/about' }" class="hvr-shutter-in-horizontal">About</a>
+                </li>
+                <li>
+                   <a v-link="{ path: '/work' }" class="hvr-shutter-in-horizontal">History</a> 
+                </li>
+                <li>
+                    <a v-link="{ path: '/skills' }" class="hvr-shutter-in-horizontal">Skills</a>
+                </li>
+                <li>
+                    <a v-link="{ path: '/samples' }" class="hvr-shutter-in-horizontal">Work</a>
+                </li>
+            </ul>
+
+            <!-- <div class="im-a-lawyer">
                 <h1>David Adams,</h1>
                 <br />
                 <h2>Web Developer</h2>
-            </div>
+            </div> -->
         </template>
 
         <!-- about content -->
@@ -147,10 +143,7 @@
 
         <!-- appears on every view -->
         <div class="send-me-mail">
-            <p>Send me mail: russianid1@gmail.com</p>
-            <br />
-            <br />
-            <p class="vue-blurb">This is a single page site using Vue and Vue router.<br />Check out the <a href="https://github.com/soundslikebliss/vue_test_1" target="_blank">code</p>
+            <p>Send me mail: russianid1@gmail.com. <br>This is a single page site using Vue and Vue router. Check out the <a href="https://github.com/soundslikebliss/vue_test_1" target="_blank"> code.</p>
         </div>
 
 

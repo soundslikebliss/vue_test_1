@@ -1,6 +1,6 @@
 body {
+    background-color: #000;
 }
-
 /*Typography*/
 p, h1, h2, h3, li {
     font-family: 'Roboto Condensed', sans-serif;
@@ -16,32 +16,34 @@ h2 {
 h3 {
     font-size: 18px;
 }
-li {
-    padding-bottom: .5em;
-}
 
 
 .wrapper {
     background-color: #ecf0f1;
-    width: 100%;
-    margin-top: 8em;
-    text-align: center;
+}
+.banner {
+    height: 480px;
+    background-image: url("background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-/*Navigation elements, links. Table layout for easy vertical alignment*/
-table {
-    width: 100%;
+/*Navigation elements, links.*/
+#home-nav {
+    text-align: center;
+    height: 80px;
 }
-td {
+#home-nav li {
+    display: inline-block;
+    padding-bottom: .5em;
     width: 20%;
-    vertical-align: middle;
     text-align: center;
     padding: 1em 0;
 }
-
 a {
     font-family: 'Roboto Mono', sans-serif;
-    font-size: 26px;
+    font-size: 22px;
     text-decoration: none;
     padding: .5em;
 }
@@ -50,6 +52,7 @@ a {
 .hvr-shutter-in-horizontal:before {
         background-color: #eee;
 }
+
 
 /*Ma face*/
 .face {
@@ -67,23 +70,23 @@ a {
 }
 
 .send-me-mail {
-    margin-top:2em;
+    color: #ecf0f1;
+    margin-top: 2em;
     text-align: center;
-}
-.vue-blurb {
     font-size: 14px;
-    font-weight: bold;
 }
-.vue-blurb a {
-    font-size: 16px;
-    color: pink;
+.send-me-mail a {
+    padding: 0;
+    font-size: 14px;
 }
+
 
 .pages-content {
     width: 50%;
     margin: 0 auto;
     padding: 1em;
     text-align: left;
+    height: 528px;
 }
 .page-button {
     margin-top: 2em;
