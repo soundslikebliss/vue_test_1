@@ -62,6 +62,9 @@ var router = new VueRouter({
 })
 
 
+//  footer partial
+Vue.partial('footer', '<div class="send-me-mail"><p>Send me mail: russianid1@gmail.com. <br>This is a single page site using Vue and Vue router. Check out the <a href="https://github.com/soundslikebliss/vue_test_1" target="_blank"> code.</p></div>')
+
 // define routes
 router.map({
     '/': {

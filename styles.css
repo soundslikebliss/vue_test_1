@@ -1,5 +1,5 @@
 body {
-    background-color: #000;
+    background-color: #ecf0f1;
 }
 /*Typography*/
 p, h1, h2, h3, li {
@@ -19,10 +19,10 @@ h3 {
 
 
 .wrapper {
-    background-color: #ecf0f1;
+    padding-bottom: 4em;
 }
 .banner {
-    height: 480px;
+    height: 76vh;
     background-image: url("background.jpg");
     background-size: cover;
     background-position: center;
@@ -32,11 +32,11 @@ h3 {
 /*Navigation elements, links.*/
 #home-nav {
     text-align: center;
-    height: 80px;
+    height: 10vh;
 }
 #home-nav li {
     display: inline-block;
-    padding-bottom: .5em;
+    /*padding-bottom: .5em;*/
     width: 20%;
     text-align: center;
     padding: 1em 0;
@@ -50,7 +50,7 @@ a {
 
 /*hover effects*/
 .hvr-shutter-in-horizontal:before {
-        background-color: #eee;
+    background-color: #eee;
 }
 
 
@@ -74,10 +74,17 @@ a {
     margin-top: 2em;
     text-align: center;
     font-size: 14px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    padding: 1.5em;
+    height: 4vh;
+
 }
 .send-me-mail a {
     padding: 0;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 
@@ -86,7 +93,6 @@ a {
     margin: 0 auto;
     padding: 1em;
     text-align: left;
-    height: 528px;
 }
 .page-button {
     margin-top: 2em;
@@ -99,12 +105,8 @@ a {
     padding-top: 1.5em;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
     .wrapper {
         margin-top: 0;
-    }
-    td {
-        display: block;
-        width: 100%;
     }
 }
