@@ -7,13 +7,14 @@
         <!-- CSS Reset -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" media="screen" title="no title" charset="utf-8">
         <!-- FONTS -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:500' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:300' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:500|Lora:700i' rel='stylesheet' type='text/css'>
+
         <!-- Hover effects -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" media="screen" title="no title" charset="utf-8">
         <!-- STYLES -->
         <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
     </head>
+
     <body>
         <div id="app" class="wrapper">
             <!-- inject everything here -->
@@ -22,7 +23,9 @@
 
         <!-- home page view -->
         <template id="home-content">
-            <div class="banner"></div>
+            <div class="banner">
+                <h1>Come See About Me</h1>
+            </div>
             <ul id="home-nav">
                 <li>
                     <a v-link="{ path: '/about' }" class="hvr-shutter-in-horizontal">About</a>
@@ -38,13 +41,9 @@
                 </li>
             </ul>
 
-            <!-- <div class="im-a-lawyer">
-                <h1>David Adams,</h1>
-                <br />
-                <h2>Web Developer</h2>
-            </div> -->
             <partial name="footer"></partial>
         </template>
+
 
         <!-- about content -->
         <template id="about">
@@ -58,6 +57,7 @@
             </div>
             <partial name="footer"></partial>
         </template>
+
 
         <!-- work content -->
         <template id="work">
@@ -78,6 +78,7 @@
             </div>
             <partial name="footer"></partial>
         </template>
+
 
         <!-- skills content -->
         <template id="skills">
@@ -101,11 +102,12 @@
                 
                 <h3>Powerade</h3>
                 <hr>
-                <br />
                 <a href="http://www.us.powerade.com/" target="_blank">Power Through</a>
+
                 <h3>KFC</h3>
                 <hr>
                 <a href="https://www.nashvillehotrecord.com/" target="_blank">Nashville Hot</a> 
+
                 <a v-link="{ path: '/' }" class="hvr-shutter-in-horizontal page-button">Home</a>
             </div>
             <partial name="footer"></partial>
