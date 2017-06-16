@@ -88,6 +88,13 @@ a {
     padding: 1em;
     text-align: left;
 }
+.pages-content h2 {
+    margin-bottom: 1.5em;
+}
+
+.pages-content p {
+    margin-bottom: 2em;
+}
 .page-button {
     margin-top: 2em;
 }
