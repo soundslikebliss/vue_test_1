@@ -2,16 +2,24 @@ body {
     background-color: #ecf0f1;
 }
 /*Typography*/
-p, li, a {
-    font-family: 'Roboto Mono', sans-serif;
+p, a {
+    font-family: 'Arial', sans-serif;
     line-height: normal;
+}
+p {
+    line-height: 1.4;
+}
+li {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
 }
 h1, h2, h3 {
     font-family: 'Lora', serif;
 }
 h1 {
-    color: #fff;
-    font-size: 70px;
+    color: #000;
+    font-size: 80px;
+    margin-bottom: 12px;
 }
 h2 {
     font-size: 22px;
@@ -28,12 +36,23 @@ h3 {
 .banner {
     height: 76vh;
     text-align: center;
-    background-image: url("background.jpg");
+    background-image: url("cloud-face.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.banner h1 {
+.banner-inner {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.banner h3 {
+    color: #000;
+    font-size: 32px;
+}
+
+/*vertical align middle*/
+.middle {
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -42,7 +61,7 @@ h3 {
 /*Navigation elements, links.*/
 #home-nav {
     text-align: center;
-    height: 10vh;
+    /*height: 10vh;*/
 }
 #home-nav li {
     display: inline-block;
@@ -84,19 +103,19 @@ a {
 
 .pages-content {
     width: 50%;
-    margin: 0 auto;
+    margin: 1em auto 0 auto;
     padding: 1em;
     text-align: left;
 }
 .pages-content h2 {
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
 }
 
 .pages-content p {
-    margin-bottom: 2em;
+    margin-bottom: 1.5em;
 }
 .page-button {
-    margin-top: 2em;
+    margin-top: 1em;
 }
 .project-link {
     font-size: 14px;
@@ -106,17 +125,36 @@ a {
     padding-top: 1.5em;
 }
 
+
+
 @media screen and (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
     .wrapper {
         margin-top: 0;
     }
+    .pages-content {
+        width: 75%;
+    }
     .banner {
-        height: 50vh;
+        height: 40vh;
     }
     #home-nav {
         height: 50vh;
     }
     #home-nav li {
         width: 100%;
+    }
+    #home-nav li a {
+        width: 50%;
+    }
+    .samples a {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .samples .home-link a {
+        padding-left: .5em;
+        padding-right: .5em;
     }
 }

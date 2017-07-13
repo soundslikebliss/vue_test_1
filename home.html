@@ -7,7 +7,7 @@
         <!-- CSS Reset -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" media="screen" title="no title" charset="utf-8">
         <!-- FONTS -->
-        <link href='https://fonts.googleapis.com/css?family=Roboto+Mono:500|Lora:700i' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Lora:700i' rel='stylesheet' type='text/css'>
 
         <!-- Hover effects -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.0.2/css/hover-min.css" media="screen" title="no title" charset="utf-8">
@@ -24,20 +24,23 @@
         <!-- home page view -->
         <template id="home-content">
             <div class="banner">
-                <h1>Come See About Me</h1>
+                <div class="banner-inner middle">
+                    <h1>David E. Adams</h1>
+                    <h3>Web Developer</h3>
+                </div>
             </div>
             <ul id="home-nav">
                 <li>
-                    <a v-link="{ path: '/about' }" class="hvr-shutter-in-horizontal">About</a>
+                    <a v-link="{ path: '/about' }" class="hvr-shutter-in-horizontal">ABOUT</a>
                 </li>
                 <li>
-                   <a v-link="{ path: '/work' }" class="hvr-shutter-in-horizontal">History</a> 
+                   <a v-link="{ path: '/work' }" class="hvr-shutter-in-horizontal">WORK</a> 
                 </li>
                 <li>
-                    <a v-link="{ path: '/skills' }" class="hvr-shutter-in-horizontal">Skills</a>
+                    <a v-link="{ path: '/skills' }" class="hvr-shutter-in-horizontal">SKILLS</a>
                 </li>
                 <li>
-                    <a v-link="{ path: '/samples' }" class="hvr-shutter-in-horizontal">Work</a>
+                    <a v-link="{ path: '/samples' }" class="hvr-shutter-in-horizontal">PORTFOLIO</a>
                 </li>
             </ul>
 
@@ -48,11 +51,14 @@
         <!-- about content -->
         <template id="about">
             <div class="pages-content">
+                <br>
                 <h2>{{heading}}</h2>
                 <hr>
+                <br>
                 <p>{{statement_one}}</p>
                 <p>{{statement_two}}</p>
                 <p>{{statement_three}}</p>
+                <p>{{statement_four}}</p>
                 <a v-link="{ path: '/' }" class="hvr-shutter-in-horizontal page-button">Home</a>
             </div>
             <partial name="footer"></partial>
@@ -84,8 +90,27 @@
         <template id="skills">
             <div class="pages-content">
                 <br />
-                <h2>A few things I have a solid understanding of:</h2>
-                <ul><li>JS, JQuery, AJAX</li> <li>AngularJS, VueJS,  React</li><li>HTML, CSS, Sass</li><li>Grunt, Gulp</li><li>Wordpress (and custom fields, types, themes)</li><li>PHP, OOP PHP</li></ul>
+                <h2>Strong understanding, experience:</h2>
+                <ul>
+                    <li>JS, JQuery, AJAX</li>
+                    <li>AngularJS, VueJS, React component architecture</li>
+                    <li>HTML, CSS, Sass</li>
+                    <li>Grunt, Gulp</li>
+                    <li>Wordpress (and custom fields, types, themes)</li>
+                    <li>PHP, OO PHP</li>
+                    <li>Version Control (Git), Jira</li>
+                    <li>Jira, Trello</li>
+                </ul>
+
+                <h2 class="pad-top">Fundamental knowledge:</h2>
+                <ul>
+                    <li>JS State, Closures, Promises</li>
+                    <li>REST apis in NodeJS</li>
+                    <li>Ruby, Rails, Sinatra</li>
+                    <li>Python sans frameworks</li>
+                    <li>SQL, MySQL, SQLite, Postgres</li>
+                    <li>Photoshop/Illustrator</li>
+                </ul>
                 <a v-link="{ path: '/' }" class="hvr-shutter-in-horizontal page-button">Home</a>
              </div>
              <partial name="footer"></partial>
@@ -93,8 +118,7 @@
 
         <!-- samples content -->
         <template id="samples">
-            <div class="pages-content">
-                <h2>~~ Professional ~~</h2>
+            <div class="pages-content samples">
 
                 <h3>Delta Airlines / Seattle Seahawks</h3>
                 <hr>
@@ -116,7 +140,12 @@
                 <a href="http://www.onshegoes.com/" target="_blank">We Belong Here</a><span>(Wordpress)</span>
                 <p></p>
 
-                <div>
+                <h3>Young Living</h3>
+                <hr>
+                <a href="https://www.myyl.com/artvandalay" target="_blank">My Young Living</a><span>(vanilla JS)</span>
+                <p></p>
+
+                <div class="home-link">
                     <a v-link="{ path: '/' }" class="hvr-shutter-in-horizontal page-button">Home</a>    
                 </div>
                 
